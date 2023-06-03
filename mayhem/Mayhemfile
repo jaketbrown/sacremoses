@@ -1,0 +1,8 @@
+project: sacremoses
+target: fuzz-sac
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_sac.py
+    libfuzzer: true
